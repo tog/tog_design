@@ -1,0 +1,474 @@
+.blogModule .module_title {
+    background: #edf3fd;
+    color: #1485cc;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1em;
+    padding: 4px 10px;
+    margin: 0 0 0.5em 0;    
+}
+
+
+.blogModule.lastCreatedBlogs ul {
+    margin: 0 0 -0.6em 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.blogModule.lastCreatedBlogs li {
+    margin-bottom: 0.6em;
+}
+.blogModule.lastCreatedBlogs li a {
+    text-decoration: none;
+    color: #333;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+.blogModule.lastCreatedComments ul {
+    margin: 0 0 -0.6em 0;
+    padding: 0;
+    list-style-type: none;
+    color: #999;
+    background-color: transparent;
+}
+.blogModule.lastCreatedComments li {
+    margin-bottom: 0.6em;
+}
+.blogModule.lastCreatedComments li .title, .blogModule.lastCreatedComments li .num_comments {
+    display: inline;
+}
+.blogModule.lastCreatedComments li a {
+    text-decoration: none;
+    color: #333;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+
+.blogModule.blogEditor .actions a {
+    color: #999;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.blogModule.blogArchives .module_title {
+    color: #555;
+    background-color: #e9e9e9;
+}
+.blogModule.blogArchives .module_content {
+    color: #555;
+    background-color: transparent;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+.blogModule.blogArchives select {
+    font-size: 0.9em;
+    line-height: 1em;
+}        
+
+
+.blogModule.blogTags .module_title {
+    background: #fde7a2;
+    color: #ff821c;
+}
+.blogModule.blogTags .module_content {
+}
+.blogModule.blogTags ul {
+    margin-bottom: -1em;
+}
+.blogModule.blogTags li {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1em;
+}    
+.blogModule.blogTags a {
+    display: block;
+    width: 100%;
+    background: #fefaaf;
+    color: #dfa118;
+    text-decoration: none;
+    padding: 2px 0;
+}
+.blogModule.blogTags a span {
+    display: block;
+    padding: 0 20px 0 5px;
+}
+.blogModule.blogTags a span span {
+    padding: 2px 5px;
+    background: transparent;
+    color: #ff821c; 
+    font-weight: bold;   
+}    
+
+
+.blogModule.prevNextPosts {
+    padding-bottom: 1em;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 1em;
+}
+.blogModule.prevNextPosts .link {
+    font-size: 1.2em;
+}
+.blogModule.prevNextPosts .link a {
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    color: #999;
+}
+.blogModule.prevNextPosts .prevPost .link {
+    text-align: right;
+}
+    .blogModule.prevNextPosts .prevPost .link a {
+        padding-left: 18px;
+        background-image: url(../images/ico/arrow-left.gif);
+        background-position: 0 50%;
+    }
+    .blogModule.prevNextPosts .nextPost .link a {
+        padding-right: 18px;
+        background-image: url(../images/ico/arrow-right.gif);
+        background-position: 100% 50%;
+    }
+.blogModule.prevNextPosts .title {
+    margin: 0.3em 0;
+    font-size: 1.6em;
+    line-height: 1.1em;
+    font-weight: bold;
+}
+    .blogModule.prevNextPosts .title a {
+        text-decoration: none;
+        color: #333;
+        background-color: transparent;
+    }
+
+
+.lastPosts {
+}
+    .lastPosts .module_title {
+        background: #edf3fd;
+        color: #1485cc;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 4px 10px;
+        margin: 0 0 0.5em 0;
+    }
+    .lastPosts li {
+        margin-bottom: 2em;
+        padding-left: 70px;
+    }
+    .lastPosts .image {
+        margin-left: -60px;
+    }    
+    .lastPosts .title {
+        font-size: 1.6em;
+        line-height: 1em;
+        font-weight: bold;
+    }
+        .lastPosts .title a {
+             text-decoration: none;
+             color: #333;
+             background-color: transparent;   
+         }
+    .lastPosts .subtitle {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        font-size: 1.4em;
+        line-height: 1em;
+        font-weight: bold;
+        color: #1485cc;
+        background-color: transparent;   
+    }
+    .lastPosts .comments_link {
+        text-align: right;
+    }
+        .lastPosts .comments_link a {
+            text-decoration: none;
+            color: #777;
+            background-color: transparent;
+        }
+
+.featuredPosts {
+}
+    .featuredPosts .module_title {
+        background: #fde7a2;
+        color: #ff821c;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 4px 10px;
+        margin: 0 0 0.5em 0;
+    }
+    .featuredPosts li {
+        margin-bottom: 2em;
+        padding-left: 100px;
+    }
+    .featuredPosts .image {
+        margin-left: -90px;
+    }    
+    .featuredPosts .title {
+        font-size: 2.2em;
+        line-height: 1em;
+        font-weight: bold;
+    }
+        .featuredPosts .title a {
+             text-decoration: none;
+             color: #333;
+             background-color: transparent;   
+         }
+    .featuredPosts .subtitle {
+        margin-top: 0.3em;
+        margin-bottom: 0.3em;
+        font-size: 1.4em;
+        line-height: 1em;
+        font-weight: bold;
+        color: #1485cc;
+        background-color: transparent;   
+    }
+    .featuredPosts .text {
+        font-size: 1.3em;
+        line-height: 1.4em;
+        color: #555;
+        background: transparent;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        margin-bottom: 0.4em;
+    }    
+    .featuredPosts .comments_link {
+        text-align: right;
+        font-size: 1.2em;
+    }
+        .featuredPosts .comments_link a {
+            text-decoration: none;
+            color: #ff821c;
+            background-color: transparent;
+        }
+
+#blogHomeLastCreated {
+}
+    #blogHomeLastCreated .module_title  {
+        background: #edffc2;
+        color: #abd406;
+        font-weight: bold;
+        font-size: 2em;
+        line-height: 1em;
+        padding: 4px 10px;
+        margin: 0 0 0.5em 0;
+    }
+    #blogHomeLastCreated .module_content {
+        padding: 0 10px;
+    }
+    #blogHomeLastCreated .module_content  .module_content {
+        padding: 0;
+    }
+
+    #blogHomeLastCreated .title {
+        font-weight: bold;
+        font-size: 1.6em;
+        line-height: 1.1em;
+        margin-bottom: 0.4em;
+    }
+    #blogHomeLastCreated .lastCreatedComments li .title {
+        font-size: 1em;
+    }  
+    #blogHomeLastCreated .blogModule .module_title {
+        padding: 0;
+        background-color: transparent;
+        color: #333;
+        font-size: 1.5em;    
+    }
+
+
+
+.blogsList {
+}
+    .blogsList ul {
+        margin-bottom: -1.8em;
+    }
+    .blogsList li {
+        margin-bottom: 1.8em;
+    }
+    .blogsList .title {
+        font-size: 2.2em;
+        line-height: 1em;
+        font-weight: bold;
+        margin-bottom: 0.3em;
+    }
+    .blogsList .title a {
+        text-decoration: none;
+        color: #1485cc;
+        background-color: transparent;    
+    }
+    .blogsList .text {
+        font-size: 1.5em;
+        line-height: 1.3em;
+        color: #555;
+        background: transparent;
+        font-family: Georgia, "Times New Roman", Times, serif;        
+    } 
+    
+.postsList {
+}
+    .postsList ul {
+        margin-bottom: -2em;
+    }            
+    .postsList li {
+        margin-bottom: 2em;
+    }
+    .postsList .title {
+        font-weight: bold;
+        font-size: 2.3em;
+        line-height: 1em;
+        margin-bottom: 0.2em;
+    }
+    .postsList .text {
+        font-size: 1.1em;
+    }
+    .postsList a.read_more {
+        font-size: 0.9em;
+    }
+    .postsList .comments_link {
+        margin-top: 0.6em;
+        text-align: right;
+    }
+    .postsList .comments_link a {
+        color: #999;
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+.blogDetail {
+    padding-bottom : 1.5em;
+    border-bottom: 1px dotted #ccc;
+    margin-bottom: 1.5em;
+}
+    .blogDetail .title {
+        font-size: 1.5em;
+        line-height: 1.3em;
+        color: #1485cc;
+        background: transparent;
+        margin-bottom: 0.3em;
+    }
+    .blogDetail .text {
+        font-size: 1.5em;
+        line-height: 1.2em;
+        color: #555;
+        background: transparent;
+        font-family: Georgia, "Times New Roman", Times, serif;           
+    }
+    
+.postDetail {
+}
+    .postDetail .title {
+        font-size: 2.5em;
+        line-height: 1.1em;
+        color: #333;
+        background: transparent;
+        margin-bottom: 0.1em;        
+    }
+    .postDetail .text {
+        font-size: 1.1em;
+        line-height: 1.4em;
+    }    
+    .postDetail .comments_link {
+        margin-top: 0.6em;
+        text-align: right;
+    }
+    .postDetail .comments_link a {
+        color: #999;
+        background-color: transparent;
+        text-decoration: none;
+    } 
+    
+.memberLastComments {
+    margin-bottom: 1em;
+}                      
+    .memberLastComments .module_title {
+        background-color: transparent;
+        color: #333;
+        font-size: 1.6em;
+        line-height: 1.2em;
+        font-weight: bold;
+        padding: 0;
+        margin: 0 0 0.3em 0;
+    } 
+    .memberLastComments .num_comments {
+        margin: -0.3em 0 0.5em 0;
+        color: #888;
+        background-color: transparent;
+    }
+    .memberLastComments ul {
+        margin: 0 0 -0.3em 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .memberLastComments li {
+        margin-bottom: 0.3em;
+    }
+    .memberLastComments a {
+        color: #888;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .memberLastComments a:hover, .memberLastComments a.delete, .memberLastComments .more a {
+        color: #dd4171;
+        background-color: transparent;
+        text-decoration: none;
+    }
+    .memberLastComments a.delete, .memberLastComments .author {
+        font-weight: bold;
+    }  
+    
+.memberManagePost {
+}
+    .memberManagePost .module_title {
+        background-color: transparent;
+        color: #333;
+        font-size: 1.6em;
+        line-height: 1.2em;
+        font-weight: bold;
+        padding: 0;
+        margin: 0 0 0.3em 0;
+    }
+    .memberManagePost .help {
+        display: block;
+        margin: 0.5em 0 0 0;
+    }
+    
+    
+.memberManagePostsFilter {
+    margin-bottom: 1em
+}
+    .memberManagePostsFilter .module_content {
+        background-color: #e9e9e9;
+        color: #555;
+        padding: 10px;
+        font-size: 1.1em;
+    }    
+    .memberManagePostsFilter ul {
+        margin: 0 0 -0.5em 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    .memberManagePostsFilter li {
+        margin-bottom: 0.5em;
+    }
+    .memberManagePostsFilter a {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        color: #555;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius:0.5em;-moz-border-radius: 0.5em;-webkit-border-radius: 0.5em;-ms-border-radius: 0.5em;           
+    }
+    .memberManagePostsFilter a span {
+        display: block;
+        padding: 2px 15px;
+    }
+    .memberManagePostsFilter a:hover, .memberManagePostsFilter li.current a {
+        background-color: #a5a5a5;
+        color: #fff;        
+    }                               
