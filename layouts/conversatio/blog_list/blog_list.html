@@ -1,0 +1,18 @@
+<div class="blogsList">
+    <ul>
+      <% 2.times do %>
+        <li class="clearfix">
+            <div class="title">
+              <%= link_to fake_company, "/conversatio/public/post/index" %>
+              <a href="#"><%= fake_company %></a> 
+              <a href="#" class="rss"><%= image_tag 'core/images/ico/rss' %></a>
+            </div>
+            <div class="text"><%= fake_paragraph %></div>   
+            <div class="metainfo">
+              <%= render 'conversatio/tag_list' %>
+            </div> <!-- /.metainfo -->
+        </li>
+      <% end %>
+    </ul>
+    
+</div> <!-- /.blogsList -->

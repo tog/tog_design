@@ -1,0 +1,17 @@
+<div class="featuredPosts" id="blogHomeFeaturedPosts">
+    <div class="module_title"><span>Featured posts</span></div>
+    <div class="module_content">                        
+        <ul>
+            <% 2.times do %>
+            <li class="clearfix">
+              <div class="image"><%= image_tag 'core/images/72x72' %></div>
+              <div class="title"><a href="#"><%= fake_sentence %></a></div>
+              <div class="subtitle"><%= fake_company %>´s blog</div>
+              <div class="text"><%= fake_paragraph %></div>   
+              <div class="comments_link"><a href="#">16 comments</a></div>
+            </li>
+            <% end %>
+        </ul>
+        <div class="more"><a href="#" class="more more_featured_posts">More featured posts</a></div>
+    </div> <!-- /.module_content -->    
+</div> <!-- /.featuredPosts -->

@@ -1,0 +1,56 @@
+<form class="member" name="new_post" id="new_post" method="get" action="edit_post">
+
+<div class="main2cols_rightside clearfix">
+    <div class="main2cols_rightside_left">
+        <div class="fields">
+            <p>
+                <label for="title">Title</label><br />
+                <input type="text" name="title" id="title" value="" class="fieldbox wide" />
+                <span class="help permalink"><strong>Permalink:</strong> http://www.example.com/blogs/supa-dupa-blogs/post/<span class="highlight">123-text-field</span></span>
+            </p>
+            <p>
+                <label for="body">Body</label><br />
+                <textarea name="body" id="body" class="editor fieldbox wide" cols="80%" rows="20">editor</textarea>
+            </p>
+            <p>
+                <label for="tags">Tags</label><br />
+                <span class="help tags">Separate tags with commas</span>
+                <input type="text" name="title" id="tags" value="" class="fieldbox wide" />
+            </p>
+        </div> <!-- /.fields -->
+
+        <div class="form_actions">
+            <input type="submit" name="submit" value="Save as draft" class="button save save_draft" />
+            <input type="submit" name="submit" value="Publish" class="button publish" />
+        </div>
+
+    </div> <!-- /.main2cols_rightside_left -->
+
+    <div class="main2cols_rightside_right">
+
+        <div class="fields">
+            <p>
+                <label for="status">Status</label><br />
+                <select name="status" id="status" class="fieldbox wide">
+                    <option value="0">Draft</option>
+                    <option value="1" selected="selected">Draft</option>
+                </select>
+            </p>
+            <p>
+                <label for="author">Author</label><br />
+                <select name="author" id="author" class="fieldbox wide">
+                    <option value="0">Aitor</option>
+                    <option value="1" selected="selected">Molpe</option>
+                </select>
+            </p>
+        </div> <!-- /.fields -->
+
+        <% if page_is '/conversatio/member/post/edit/' %>
+          <%= render 'conversatio/member/last_comments' %>
+          <%= render 'conversatio/member/post_manage' %>
+        <% end %>
+
+    </div> <!-- /.main2cols_rightside_right -->
+
+</div> <!-- /.main2cols_rightside -->
+</form>

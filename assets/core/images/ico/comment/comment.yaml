@@ -1,0 +1,7 @@
+# Built-in
+binary:       true
+filters:      []
+
+# Custom
+version:      "1"
+asset_id:     "core/images/ico/comment"

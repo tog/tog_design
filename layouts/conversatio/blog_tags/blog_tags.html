@@ -1,0 +1,15 @@
+<div class="blogModule blogTags clearfix">
+    <div class="module_title"><span>Tag list</span></div>
+    <div class="module_content clearfix">
+        <ul class="first">
+          <% fake_tags(3).each do |tag|%>
+            <li><a href="#"><span><%= tag %> <span class="num_items">18</span></span></a></a></li>
+          <% end %>
+        </ul>
+        <ul>
+          <% fake_tags(3).each do |tag|%>
+            <li><a href="#"><span><%= tag %> <span class="num_items">18</span></span></a></a></li>
+          <% end %>
+        </ul>
+    </div> <!-- /.module_content -->
+</div> <!-- /.blogTags -->

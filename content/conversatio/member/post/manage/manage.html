@@ -1,0 +1,47 @@
+<%= render 'conversatio/extra_css_and_js' %>
+
+<h2><span>Manage Posts</span></h2>
+<form class="member" name="new_post" id="new_post" method="get" action="edit_post">
+
+<div class="main2cols_rightside clearfix">
+
+  <div class="main2cols_rightside_left">
+    <table>
+      <tr>
+          <th scope="col" nowrap="nowrap">&nbsp;</th>
+          <th scope="col" nowrap="nowrap">Publish Date</th>
+          <th scope="col" nowrap="nowrap" width="75%">Title</th>
+          <th scope="col" nowrap="nowrap" width="25%">Author</th>
+          <th scope="col" nowrap="nowrap">Status</th>
+          <th scope="col" nowrap="nowrap" class="center"><img src="../public/core/images/ico/comment.gif" alt="Comments" /></th>
+      </tr>
+      <% 10.times do %>
+        <tr>
+            <td><input type="checkbox" name="posts[]" value="1" />
+            <td nowrap="nowrap">12 Nov 2008</td>
+            <td><a href="#">Post title</a></td>
+            <td>Aitor García</td>
+            <td>Draft</td>
+            <td class="right">999</td>
+        </tr>
+        <tr class="pair">
+            <td><input type="checkbox" name="posts[]" value="1" />
+            <td nowrap="nowrap">12 Nov 2008</td>
+            <td><a href="#">Post title</a></td>
+            <td>Aitor García</td>
+            <td>Published</td>
+            <td class="right">99</td>
+        </tr>
+      <% end %>
+    </table>
+                
+    <%= will_paginate %>
+  </div> <!-- /.main2cols_rightside_left -->
+    
+  <div class="main2cols_rightside_right">
+    <%= render 'conversatio/member/post_filter' %>
+    <input type="submit" name="delete" class="button delete delete_post" value="Delete selected posts" />
+  </div> <!-- /.main2cols_rightside_right -->        
+
+</div> <!-- /.main2cols_rightside -->   
+</form>

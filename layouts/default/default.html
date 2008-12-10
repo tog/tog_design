@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-style-type" content="text/css" />
+<meta http-equiv="title" content="<%= page_title %>"/>
+
+<title><%= page_title %></title>
+
+<%= meta_tag "language", "en" %>
+<%= meta_title %>
+<%= meta_description %>
+<%= meta_keywords %>
+<%= meta_author %>
+
+<link rel="icon" href="../public/tog/images/favicon.ico" />
+
+<%= stylesheet_link_tag 'core/stylesheets/common' %>
+
+<%= stylesheet_link_tag 'tog/stylesheets/template' %>
+<%= stylesheet_link_tag 'tog/stylesheets/common' %>
+
+<!--[if lt IE 7.]>
+  <%= stylesheet_link_tag 'core/stylesheets/ie6' %>
+  <%= stylesheet_link_tag 'tog/stylesheets/ie6' %>
+<![endif]--> 
+
+<!--[if IE 7]>
+  <%= stylesheet_link_tag 'core/stylesheets/ie7' %>
+  <%= stylesheet_link_tag 'tog/stylesheets/ie7' %>
+  <%= javascript_include_tag 'core/javascripts/IE7' %>
+<![endif]-->
+
+<%= inject_css %>
+<%= inject_js %>
+
+<link rel="start" type="text/html" href="/" title="Home" />
+
+</head>
+
+<body>
+    <div id="container">
+    <div id="container_wrapper">
+        <%= render 'header' %>
+        
+        <div id="pagebody">
+          <%= @page.content %>
+        </div> <!-- /#pagebody --> 
+        
+        <%= render 'footer' %>
+    </div>
+    </div> <!-- #container -->
+</body>
+</html>

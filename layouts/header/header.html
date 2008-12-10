@@ -1,0 +1,39 @@
+<div id="header" class="clearfix">
+    <div id="header_content">
+        <h1 id="logo"><a href="#">toginstallation.com</a></h1>
+
+        <div id="header_user_options">
+            <ul>
+                <li><%= @page.user_name %>Aitor García</li>
+                <li><a href="#">My info</a></li>
+                <li class="last"><a href="#">Log-out</a></li>
+            </ul>
+        </div> <!-- /#header_user_options -->
+
+
+        <div id="menu" class="clearfix">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li class="current"><a href="#">Blogs</a>
+                        <ul>
+                            <li class="current">
+                              <%= link_to('The community', '/conversatio/public/blog/index') %>
+                            </li>
+                            <%= link_to('Blog index', '/conversatio/public/blog/alpha_index') %>
+                        </ul>                            
+                    </li>
+                    <li><a href="#">Photos</a></li>
+                </ul>
+        </div>  <!-- #menu -->
+
+
+        <div id="header_search">
+            <form name="global_search" id="global_search" action="seach">
+                <label for="global_search_field">Search</label>
+                <input type="text" name="global_search_field" id="global_search_field" value="Y un buscador..." class="fieldbox" />
+                <input type="submit" value="Go" class="button" />
+            </form>                            
+        </div> <!-- /#header_search -->    
+
+    </div> <!-- /#header_content -->
+</div>  <!-- /#header -->

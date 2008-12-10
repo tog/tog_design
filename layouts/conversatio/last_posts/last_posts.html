@@ -1,0 +1,22 @@
+<div class="lastPosts">
+    <div class="module_title"><span>Last posts</span></div>
+    <div class="module_content">
+        <ul>
+            <% 3.times do %>
+              <li class="clearfix">
+                <div class="image"><%= image_tag 'core/images/42x42' %></div>
+                <div class="title"><%= link_to fake_sentence, "/conversatio/public/post/show" %></div>
+                <div class="subtitle"><%= link_to "#{fake_company}´s blog", "/conversatio/public/post/index" %></div>
+                <div class="metainfo">
+                    <%= render 'conversatio/tag_list' %>
+                </div> <!-- /.metainfo -->
+                <div class="text"><%= fake_paragraph %></div>   
+                <div class="comments_link"><a href="#">16 comments</a></div>
+              </li>
+            <% end %>
+        </ul>
+        <%= will_paginate %><br/><br/><br/><br/><br/>
+        <div class="more"><%= link_to "More posts", '/conversatio/public/post/last' %></div>
+        
+    </div> <!-- /.module_content -->    
+</div> <!-- /.lastPosts -->

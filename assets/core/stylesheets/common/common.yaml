@@ -1,0 +1,7 @@
+# Built-in
+binary:       false
+filters:      []
+
+# Custom
+version:      "1"
+asset_id:     "core/stylesheets/common"

@@ -1,0 +1,14 @@
+<div class="blogModule lastCreatedComments">
+    <div class="module_title"><span>Last comments</span></div>
+    <div class="module_content">
+        <ul>
+          <% 4.times do %>
+            <li>
+              <div class="title"><%= link_to fake_sentence, "#" %></div>
+              <div class="num_comments">8 comments</div>
+              <div class="commenters"><%= fake_name %>, <%= fake_name %></div>
+            </li>
+          <% end %>
+        </ul>
+    </div> <!-- /.module_content -->
+</div> <!-- /.lastCreatedComments -->

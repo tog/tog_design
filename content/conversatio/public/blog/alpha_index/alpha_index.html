@@ -1,0 +1,25 @@
+<%= render 'conversatio/extra_css_and_js' %>
+
+<div class="alfabet">
+    <ul>
+      <% ("A".."Z").each do |letter| %>
+        <li><a href="#"><%= letter %></a></li>
+      <% end %>
+      <li class="current"><a href="#">#</a></li>
+    </ul>
+</div>
+
+<div class="main2cols clearfix">
+    
+    <div class="main2cols_left">
+      <%= render 'conversatio/blog_list' %>
+      
+    </div> <!-- /.main2cols_left -->
+    
+    <div class="main2cols_right">
+      <%= render 'conversatio/blog_list' %>
+    </div> <!-- /.main2cols_right -->        
+
+    
+</div> <!-- /.main2cols -->   
+<%= will_paginate %>
