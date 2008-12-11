@@ -21,6 +21,7 @@
   .photosetList li {
     margin: 0 0 20px 20px;
     padding: 8px;
+    width: 150px;
     border: 1px solid #acadaf;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #555;
