@@ -16,10 +16,10 @@
     font-weight: bold;
   }
   .photosetList ul {
-    margin: 10px 0 -20px -20px;
+    margin: 10px 0 20px -20px;
   }
   .photosetList li {
-    margin: 0 0 20px 20px;
+    margin: 0 0 0 20px;
     padding: 8px;
     width: 150px;
     border: 1px solid #acadaf;
