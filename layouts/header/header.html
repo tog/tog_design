@@ -14,13 +14,13 @@
         <div id="menu" class="clearfix">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li class="current"><a href="#">Blogs</a>
+                    <li class="current"><%= link_to('Blogs', '/conversatio/public/blog/index') %>
                         <ul>
                             <li class="current"><%= link_to('The community', '/conversatio/public/blog/index') %></li>
                             <li><%= link_to('Blog index', '/conversatio/public/blog/alpha_index') %></li>
                         </ul>                            
                     </li>
-                    <li><a href="#">Photos</a></li>
+                    <li><%= link_to('Photos', '/picto/public/photostream/index') %></li>
                 </ul>
         </div>  <!-- #menu -->
 
