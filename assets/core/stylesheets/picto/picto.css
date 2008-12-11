@@ -1,0 +1,135 @@
+.photosetList {
+}
+  .photosetList ul {
+    margin: 0 0 -20px -20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .photosetList li {
+    float: left;
+    display: inline;
+    margin: 0 0 20px 20px;
+  }
+    
+.photosetPhotosList {
+}    
+  .photosetPhotosList ul {
+    margin: 0 0 -3px -3px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .photosetPhotosList li {
+    float: left;
+    display: inline;
+    margin: 0 0 3px 3px;    
+  }
+
+
+.photosNavigation {
+}        
+  .photosNavigation .prevPhoto {
+    float: left;
+    display: inline;
+    width: 45%;
+  }
+  .photosNavigation .nextPhoto {
+    float: right;
+    display: inline;
+    width: 45%;
+  }
+
+
+.photosetsNavigation {
+}
+  .photosetsNavigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .photosetsNavigation ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .photosetsNavigation .prevPhoto {
+    float: left;
+    display: inline;
+    width: 45%;
+  }
+  .photosetsNavigation .nextPhoto {
+    float: right;
+    display: inline;
+    width: 45%;
+  }
+    
+
+
+.photoDetail {
+}
+  .photoDetail .item_actions ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;        
+  }
+  .photoDetail .item_actions li {
+    display: inline;
+  }
+
+
+.photosets {
+}
+  .photosets ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+    
+
+.photostreamList {
+}
+  .photostreamList ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  .photostreamList .col_left {
+    float: left;
+    display: inline;
+    width: 48%;
+  }               
+  .photostreamList .col_right {
+    float: right;
+    display: inline;
+    width: 48%;
+  }
+
+
+form#upload_photos {
+}                         
+  form#upload_photos ul{ 
+    margin: 0 -5% 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  form#upload_photos li{ 
+    margin: 0 5% 30px 0;
+    float: left;
+    display: inline;
+    width: 42%;
+  } 
+    
+.memberPhotostream {
+}
+  .memberPhotostream ul {
+    margin: 0 0 -5px -5px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .memberPhotostream li {
+    float: left;
+    display: inline;
+    margin: 0 0 5px 5px;
+  }
+    
+             
