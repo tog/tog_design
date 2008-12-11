@@ -4,17 +4,16 @@
   <div class="module_title"><span><%= fake_company %>'s photosets</span></div>
   <div class="module_content">
     <div class="admin_options"><a href="#" class="new new_photoset">Create a new photoset</a></div>
-    <ul class="clearfix">
-      <% 15.times do %>
-      <li>
-        <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/150x150' %></a></div>
-        <div class="title"><%= link_to fake_company, "/picto/public/photosets/show" %></div>
-        <div class="num_photos">78 photos</div>
-      </li>
-
-      <!-- Aquí hay que poner un if para que cada 5 elementos, y si hay más items que mostrar, ponga </ul><ul class="clearfix"> -->
-
-      <% end %>
-    </ul>
+    <% 3.times do %>
+      <ul class="clearfix">
+        <% 5.times do %>
+          <li>
+            <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/150x150' %></a></div>
+            <div class="title"><%= link_to fake_company, "/picto/public/photosets/show" %></div>
+            <div class="num_photos">78 photos</div>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
   </div> <!-- /.module_content -->
 </div> <!-- /.photosetList -->
