@@ -181,7 +181,7 @@
   }
   .photoDetail .image { 
     margin-bottom: 0.5em;
-    text-align: center;
+    text-align: left;
   }
   .photoDetail .text {
     font-family: Georgia, "Times New Roman", Times, serif;
