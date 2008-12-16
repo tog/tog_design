@@ -1,0 +1,20 @@
+<div class="pictoModule featuredPhotosets clearfix">
+    <div class="module_title"><span>Photosets</span></div>
+    <div class="module_content">
+        <ul>
+           <% 2.times do %>
+            <li>
+                <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/150x150' %></a></div>
+                <div class="title"><%= link_to fake_company, "/picto/public/photosets/show" %></div>
+                <div class="num_photos">78 photos</div>                                    
+            </li>
+            <% end %>
+            <li class="last">
+                <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/150x150' %></a></div>
+                <div class="title"><%= link_to fake_company, "/picto/public/photosets/show" %></div>
+                <div class="num_photos">78 photos</div>                                    
+            </li>
+        </ul>
+        <div class="more"><%= link_to "View all photosets...", '/picto/public/photosets/index' %></div>
+    </div> <!-- /.module_content -->
+</div> <!-- /.featuredPhotosets -->

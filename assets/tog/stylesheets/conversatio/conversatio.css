@@ -62,12 +62,16 @@
 .blogModule.blogArchives .module_content {
     color: #555;
     background-color: transparent;
-    font-size: 1.3em;
-    line-height: 1.3em;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 .blogModule.blogArchives select {
     font-size: 0.9em;
     line-height: 1em;
+}
+.blogModule.blogArchives .button {
+  width: 2em;
+  min-width: 2em;
 }        
 
 
@@ -343,6 +347,15 @@
         background-color: transparent;
         text-decoration: none;
     }
+body.conversatio.public.post.index .main2cols_right .blogModule {
+  margin-left: 52%;
+}
+body.conversatio.public.post.index .main2cols_right .lastCreatedComments {
+  float: left;
+  display: inline;
+  margin: 0;
+  width: 48%;
+}
 
 .blogDetail {
     padding-bottom : 1.5em;

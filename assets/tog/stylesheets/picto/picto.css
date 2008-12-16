@@ -208,10 +208,14 @@
     padding: 0;
     list-style-type: none;
   }
+body.picto.public.photo.show .moduleComments {
+  margin-right: 200px;
+  
+}    
     
-.photosets {
+.featuredPhotosets {
 }
-  .photosets .module_title {
+  .featuredPhotosets .module_title {
     color: #ff821c;
     background-color: #fde7a2;
     font-weight: bold;
@@ -220,10 +224,10 @@
     padding: 2px 10px;
     margin-bottom: 0.5em;
   }
-  .photosets ul {
+  .featuredPhotosets ul {
     margin-bottom: -20px;
   }
-  .photosets li {
+  .featuredPhotosets li {
     width: 150px;
     margin: 0 auto 20px auto;
     padding: 8px;
@@ -232,21 +236,21 @@
     color: #555;
     background-color: #fff;
   }
-  .photosets .title {
+  .featuredPhotosets .title {
     font-size: 1.3em;
     line-height: 1.2em;
     margin: 0.5em 0 0 0;
   }
-  .photosets .title a {
+  .featuredPhotosets .title a {
     color: #333;
     background-color: transparent;
     text-decoration: none;
   }
-  .photosets .more {
+  .featuredPhotosets .more {
     padding-top: 1.5em;
     text-align: right;
   }
-    .photosets .more a {
+    .featuredPhotosets .more a {
       color: #1485cc;
       background-color: transparent;
       text-decoration: none;            
