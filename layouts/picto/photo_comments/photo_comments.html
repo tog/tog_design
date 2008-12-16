@@ -1,0 +1,57 @@
+<div class="moduleComments">
+    <div class="module_title"><span>Comments</span></div>
+    <div class="moduel_content">
+        <ul>
+          <% 2.times do %>
+            <li class="clearfix">
+              <div class="image"><%= image_tag 'core/images/42x42' %></div>
+              <div class="title"><%= link_to fake_name, "#" %> says</div>
+              <div class="text"><%= fake_paragraph %></div>
+              <div class="metainfo">
+                <span class="meta">14 Jul 08, 6:43pm</span>
+                <a class="permalink" href="#">(permalink)</a>
+              </div> <!-- /.metainfo -->
+            </li>
+            <li class="pair clearfix">
+                <div class="image"><%= image_tag 'core/images/42x42' %></div>
+                <div class="title"><%= link_to fake_name, "#" %> says</div>
+                <div class="notice warning"><strong>Fresh comment:</strong> You can <a href="#">edit this comment</a> for the next 15 minutes (until <span class="hour_limit">7:00 pm</span>)</div>
+                <div class="text"><%= fake_paragraph %></div>
+                <div class="metainfo">
+                    <span class="meta">14 Jul 08, 6:43pm</span>
+                    <a class="permalink" href="#">(permalink)</a>
+                </div> <!-- /.metainfo -->
+            </li>
+          <% end %>
+        </ul>
+        
+        
+        <form name="f_comments" action="f_comments" method="post">
+            <div class="form_title"><span>Add comment</span></div>
+            <div class="fields">
+                <p>
+                   <label for="name">Name</label><br />
+                   <input type="text" name="name" id="name" value="" class="fieldbox wide" /> 
+                </p>
+                <p>
+                   <label for="email">Email</label><br />
+                   <input type="text" name="email" id="email" value="" class="fieldbox wide" /> 
+                </p>
+                <p>
+                   <label for="website">Web</label><br />
+                   <input type="text" name="website" id="website" value="" class="fieldbox wide" /> 
+                </p>
+                <p>
+                    <label for="comment">Commment</label> <br />
+                    <textarea name="comment" id="comment" cols="90%" rows="7" class="fieldbox wide"></textarea>
+                </p>
+            </div>
+            
+            
+            <div class="form_actions">
+                <input type="submit" name="submit" value="Add comment" class="button add add_comment" />
+            </div>
+            
+        </form>
+    </div> <!-- /.module_content -->
+</div> <!-- /.module_photo_comments -->

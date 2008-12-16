@@ -1,3 +1,5 @@
-.button { width: auto; overflow: visible; }
+/*.button { width: auto; overflow: visible; }*/
+.button {min-width: 130px;}
 .blogModule.lastCreatedComments li .num_comments { padding-left: 0.5em;}
 .blogModule.blogTags .module_content { margin-left: -15px;}
+.pictoModule.photosetPhotos .module_content {min-height: 1px;}

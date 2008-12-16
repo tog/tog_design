@@ -1,1 +1,128 @@
-Hi, I'm a new page!
+<%= render 'picto/extra_css_and_js' %>
+
+<h2><span>Upload Photos</span></h2>
+<form class="member" name="upload_photos" id="upload_photos" method="get" action="upload_photos">
+
+<div class="main2cols_rightside clearfix">
+    
+  <div class="main2cols_rightside_left">
+      
+    <div class="fields clearfix">
+      <ul>
+        <li>
+          <div class="title">Photo #1</div>
+          <p>
+            <label for="title1">Title</label><br />
+            <input type="text" name="title1" id="title1" value="" class="fieldbox wide" />
+          </p>
+          <p>
+            <label for="body1">Description</label><br />
+            <textarea name="body1" id="body1" class="editor fieldbox wide" cols="80%" rows="6">Text area</textarea>
+        </p>
+          <p>
+            <label for="tags1">Tags</label><br />
+            <input type="text" name="tags1" id="tags1" value="" class="fieldbox wide" />
+          </p>
+          <p>
+            <input type="button" name="file1" value="Select file..." />
+            <span id="file1" class="file">woman.jpg</span>
+          </p>                                
+        </li>
+        <li>
+          <div class="title">Photo #2</div>
+          <p>
+            <label for="title2">Title</label><br />
+            <input type="text" name="title2" id="title2" value="" class="fieldbox wide" />
+          </p>
+          <p>
+            <label for="body2">Description</label><br />
+            <textarea name="body2" id="body2" class="editor fieldbox wide" cols="80%" rows="6">Text area</textarea>
+          </p>
+          <p>
+            <label for="tags2">Tags</label><br />
+            <input type="text" name="tags2" id="tags2" value="" class="fieldbox wide" />
+          </p>                                
+          <p>
+            <input type="button" name="file2" value="Select file..." />
+            <span id="file2" class="file">woman.jpg</span>
+          </p>                                
+        </li>
+        <li>
+          <div class="title">Photo #3</div>
+          <p>
+            <label for="title3">Title</label><br />
+            <input type="text" name="title3" id="title3" value="" class="fieldbox wide" />
+          </p>
+          <p>
+            <label for="body3">Description</label><br />
+            <textarea name="body3" id="body3" class="editor fieldbox wide" cols="80%" rows="6">Text area</textarea>
+          </p>
+          <p>
+            <label for="tags3">Tags</label><br />
+            <input type="text" name="tags3" id="tags3" value="" class="fieldbox wide" />
+          </p>                                
+          <p>
+            <input type="button" name="file3" value="Select file..." />
+            <span id="file3" class="file">woman.jpg</span>
+          </p>                                
+        </li>
+        <li>
+          <div class="title">Photo #4</div>
+          <p>
+            <label for="title4">Title</label><br />
+            <input type="text" name="title4" id="title4" value="" class="fieldbox wide" />
+          </p>
+          <p>
+            <label for="body4">Description</label><br />
+            <textarea name="body4" id="body4" class="editor fieldbox wide" cols="80%" rows="6">Text area</textarea>
+          </p>
+          <p>
+            <label for="tags4">Tags</label><br />
+            <input type="text" name="tags4" id="tags4" value="" class="fieldbox wide" />
+          </p>                                
+          <p>
+            <input type="button" name="file4" value="Select file..." />
+            <span id="file4" class="file">woman.jpg</span>
+          </p>                                
+        </li>
+      </ul>
+    </div> <!-- /.fields -->
+    
+    <div class="form_actions">
+      <input type="submit" name="submit" value="Upload!" class="button upload upload_photos" />
+    </div>
+          
+
+
+  </div> <!-- /.main2cols_rightside_left -->
+  
+  <div class="main2cols_rightside_right">
+      
+    <div class="pictoModule memberUploadPhotosSettings clearfix">
+      <div class="module_title"><span>Upload Settings</span></div>
+      <div class="module_content">
+        <div class="fields">
+            
+          <p>
+            <label for="photoset">Photoset</label><br />
+            <select name="photoset" id="photoset" class="fieldbox wide">
+              <option value="0">Select photoset</option>
+              <option value="1" selected="selected">Photoset 1</option>
+            </select>
+          </p>
+          <p>
+            <label for="tags">Tags</label><br />
+            <span class="help tags">These tags will be applied to every photo in this upload</span>
+            <input type="text" name="tags" id="tags" value="" class="fieldbox wide" />
+          </p>
+            
+        </div> <!-- /.fields -->
+
+      </div> <!-- /.module_content -->   
+    </div> <!-- /.memberUploadPhotosSettings -->
+      
+
+  </div> <!-- /.main2cols_rightside_right -->        
+
+</div> <!-- /.main2cols_rightside -->   
+</form>

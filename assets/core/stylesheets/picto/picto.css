@@ -132,5 +132,25 @@ form#upload_photos {
     display: inline;
     margin: 0 0 5px 5px;
   }
-    
+
+.photosetPhotos {
+}
+  .photosetPhotos ul {
+    margin: 0 0 -5px -5px;
+    padding: 0;
+    list-style-type: none;
+  }
+  .photosetPhotos li {
+    float: left;
+    display: inline;
+    margin: 0 0 5px 5px
+  }
+  form#edit_photoset .fields .image {
+    position: relative;
+  }
+  form#edit_photoset .fields .image .cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }       
              

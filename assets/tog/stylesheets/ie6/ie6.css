@@ -2,3 +2,4 @@
 #menu ul ul { width: 960px;}
 .blogModule.lastCreatedComments li .num_comments { padding-left: 0.5em;}
 .blogModule.blogTags .module_content ul {margin-left: -15px;}
+.pictoModule.photosetPhotos .module_content {height: 1px;}

@@ -190,6 +190,11 @@
             color: #777;
             background-color: transparent;
         }
+    .lastPosts .more {
+      clear: both;
+      padding-top: 2em;
+    }
+
 
 .featuredPosts {
 }

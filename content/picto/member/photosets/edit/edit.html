@@ -1,1 +1,83 @@
-Hi, I'm a new page!
+<%= render 'picto/extra_css_and_js' %>
+
+<h2><span>Edit Photoset</span></h2>
+<form class="member" name="edit_photoset" id="edit_photoset" method="get" action="edit_photoset">
+
+<div class="main2cols_rightside clearfix">
+    
+  <div class="main2cols_rightside_left">
+      
+    <div class="fields clearfix">
+      <div class="image">
+        <div class="cover"><%= image_tag 'core/images/photosets/cover' %></div>
+        <%= image_tag 'core/images/115x115' %>
+        <span class="help">Drag here the photo you want to use as the photoset cover</span>
+      </div>
+      <p>
+        <label for="title">Title</label><br />
+        <input type="text" name="title" id="title" value="" class="fieldbox wide" />
+      </p>
+      <p>
+        <label for="body">Description</label><br />
+        <textarea name="body" id="body" class="editor fieldbox wide" cols="80%" rows="6">Text area</textarea>
+      </p>
+      <p>
+        <label for="tags">Tags</label><br />
+        <input type="text" name="tags" id="tags" value="" class="fieldbox wide" />
+      </p>
+    </div> <!-- /.fields -->
+
+    <div class="pictoModule photosetPhotos">
+      <div class="module_title"><span>Photos in the set</span></div>
+      <div class="module_content">
+        <ul class="clearfix">
+          <% 18.times do %>
+          <li><a href="#"><%= image_tag 'core/images/72x72' %></a></li>
+          <% end %>
+        </ul>        
+      </div> <!-- /.module_content -->
+    </div> <!-- /.photosetPhotos -->
+
+    
+    <div class="form_actions">
+      <input type="submit" name="submit" value="Save photoset" class="button save save_photoset" />
+    </div>
+          
+
+
+  </div> <!-- /.main2cols_rightside_left -->
+  
+  <div class="main2cols_rightside_right">
+      
+    <div class="pictoModule memberPhotostream clearfix">
+      <div class="module_title"><span>Your photostream</span></div>
+      <div class="module_content">
+          
+        <div class="help">Drag the photos you want to add to this photoset:</div>
+        
+        <div class="thumbs">
+          <ul class="clearfix">
+              <% 18.times do %>
+              <li><a href="#"><%= image_tag 'core/images/72x72' %></a></li>
+              <% end %>
+          </ul>
+        </div>
+        <div class="thumbs empty">Drag here to remove a photo of a photoset</div>
+        <%= will_paginate %>
+
+      </div> <!-- /.module_content -->   
+    </div> <!-- /.memberPhotostream -->
+    
+    <div class="pictoModule memberManagePhotoset clearfix">
+      <div class="module_title"><span>Manage</span></div>
+      <div class="module_content">
+        <input type="submit" name="delete" class="button delete delete_photoset" value="Delete this photo" />
+        <span class="help">This action can't be undone</span>
+      </div> <!-- /.module_content -->   
+    </div> <!-- /.memberManagePhotoset -->
+
+
+  </div> <!-- /.main2cols_rightside_right -->        
+
+</div> <!-- /.main2cols_rightside -->   
+</form>

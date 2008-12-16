@@ -3,7 +3,7 @@ module Nanoc::Helpers
   module Tog
 
     def stylesheet_link_tag(css)
-      "<link rel=\"stylesheet\" href=\"#{asset(css).path}\" type=\"text/css\" media=\"screen\">"
+      "<link rel=\"stylesheet\" href=\"#{asset(css).path}\" type=\"text/css\" media=\"screen\" />"
     end
     def javascript_include_tag(js)
       "<script type=\"text/javascript\" src=\"#{asset(js).path}\"></script>"

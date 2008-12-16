@@ -1,0 +1,31 @@
+<div class="pictoModule photosetsNavigation clearfix">
+  <div class="module_title"></div>
+  <div class="module_content">
+    <ul>
+      <% 2.times do %>
+      <li class="clearfix">
+        <div class="title">Another set called &quot;<%= fake_name %>&quot;</div>
+        <div class="prevPhoto">
+          <div class="link"><%= link_to "Previous Photo", "/picto/public/photosets/show" %></div>
+          <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/115x115' %></a></div>
+        </div>    
+        <div class="nextPhoto">
+          <div class="link"><%= link_to "Next Photo", "/picto/public/photosets/show" %></div>
+          <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/115x115' %></a></div>
+        </div>                                    
+      </li>
+      <% end %>
+      <li class="clearfix last">
+        <div class="title">Another set called &quot;<%= fake_name %>&quot;</div>
+        <div class="prevPhoto">
+          <div class="link"><%= link_to "Previous Photo", "/picto/public/photosets/show" %></div>
+          <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/115x115' %></a></div>
+        </div>    
+        <div class="nextPhoto">
+          <div class="link"><%= link_to "Next Photo", "/picto/public/photosets/show" %></div>
+          <div class="image"><a href="/picto/public/photosets/show"><%= image_tag 'core/images/115x115' %></a></div>
+        </div>                                    
+      </li>
+    </ul>
+  </div> <!-- /.module_content -->
+</div> <!-- /.pictoModule --> 

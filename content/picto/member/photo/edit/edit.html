@@ -1,1 +1,49 @@
-Hi, I'm a new page!
+<%= render 'picto/extra_css_and_js' %>
+
+<h2><span>Edit Photo</span></h2>
+<form class="member" name="edit_photo" id="edit_photo" method="get" action="edit_photo">
+
+<div class="main2cols_rightside clearfix">
+    
+  <div class="main2cols_rightside_left">
+      
+    <div class="image"><%= image_tag 'core/images/150x150' %></div>
+        
+    <div class="fields">
+      <p>
+        <label for="title">Title</label><br />
+        <input type="text" name="title" id="title" value="Woman Beauty" class="fieldbox wide" />
+      </p>
+      <p>
+        <label for="body">Body</label><br />
+        <textarea name="body" id="body" class="editor fieldbox wide" cols="80%" rows="20">Text area</textarea>
+      </p>
+      <p>
+        <label for="tags">Tags</label><br />
+        <span class="help tags">Separate tags with commas</span>
+        <input type="text" name="title" id="tags" value="tag1,tag2,tag3" class="fieldbox wide" />
+      </p>
+    </div> <!-- /.fields -->
+    
+    <div class="form_actions">
+      <input type="submit" name="submit" value="Save photo" class="button save save_photo" />
+    </div>
+          
+
+
+  </div> <!-- /.main2cols_rightside_left -->
+  
+  <div class="main2cols_rightside_right">
+
+    <div class="pictoModule memberManagePhoto clearfix">
+      <div class="module_title"><span>Manage</span></div>
+      <div class="module_content">
+        <input type="submit" name="delete" class="button delete delete_photo" value="Delete photo" />
+        <span class="help">This action can't be undone</span>
+      </div> <!-- /.module_content -->   
+    </div> <!-- /.memberManagePhoto -->
+
+  </div> <!-- /.main2cols_rightside_right -->        
+
+</div> <!-- /.main2cols_rightside -->   
+</form>

@@ -11,7 +11,7 @@ def page_is path
 end
 
 def image_tag(source)
-  "<img src='#{asset(source).path}' alt='' />"
+  "<img src=\"#{asset(source).path}\" alt=\"\" />"
 end
 
 
@@ -34,5 +34,5 @@ def meta_author
 end
 
 def meta_tag(name, content)
-  "<meta name='#{name}' content='#{content}' />"
+  "<meta name=\"#{name}\" content=\"#{content}\" />"
 end
