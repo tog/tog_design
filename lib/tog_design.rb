@@ -2,6 +2,11 @@ include Nanoc::Helpers::LinkTo
 include Nanoc::Helpers::Faker
 include Nanoc::Helpers::Tog
 
+def body_class
+  custom_class = @page.custom_body_class
+  default_class = @page.path.split('/').delete_if{|j| j == ""}.join(" ")
+  custom_class || default_class
+end
 def asset(asset_id)
   @assets.find { |asset| asset.asset_id == asset_id }
 end
